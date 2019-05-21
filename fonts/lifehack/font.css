@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Lifehack-Medium';
+  src: url('Lifehack-Medium.eot');
+
+  src: url('Lifehack-Medium.eot?#iefix') format('embedded-opentype'),
+
+       url('Lifehack-Medium.svg#Lifehack-Medium') format('svg'),
+
+       url('Lifehack-Medium.ttf') format('truetype'),
+
+       url('Lifehack-Medium.woff') format('woff'),
+      
+ url('Lifehack-Medium.woff2') format('woff2');
+
+ font-weight: normal;
+  font-style: normal;
+}
+
