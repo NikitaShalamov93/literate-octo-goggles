@@ -1006,7 +1006,7 @@ footer {
   fill: #e45028; }
 
 .map {
-  background-image: url(/img/bg/maps.jpg);
+  background-image: url(../img/bg/maps.jpg);
   background-position: center;
   background-size: cover; }
 
@@ -1084,7 +1084,7 @@ footer {
       padding: 1.5625rem 0.9375rem; } }
 
 .menu {
-  background: url("../../img/bg/menu.jpg") 50% no-repeat;
+  background: url("../img/bg/menu.jpg") 50% no-repeat;
   background-size: cover;
   position: relative; }
 
