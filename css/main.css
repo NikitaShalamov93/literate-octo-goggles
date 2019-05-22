@@ -707,7 +707,7 @@ footer {
   margin-bottom: 0.3125rem; }
 
 .footer {
-  background: url("../../img/bg/footer.jpg") center bottom no-repeat;
+  background: url("../img/bg/footer.jpg") center bottom no-repeat;
   background-size: cover;
   position: absolute;
   bottom: 0;
