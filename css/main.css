@@ -956,7 +956,7 @@ footer {
   max-height: 100%; }
   @media screen and (max-width: 768px) {
     .hero__img {
-      max-width: 80%; } }
+      max-width: 45%; } }
 
 .down-arrow {
   position: absolute;
