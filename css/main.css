@@ -434,7 +434,7 @@ template {
   html {
     font-size: 0.9375rem; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   html {
     font-size: 0.8125rem; } }
 
@@ -523,7 +523,7 @@ footer {
   height: 6.25rem; }
   .best__icon-pic svg {
     max-width: 95%; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .best__icon-pic {
       position: static;
       -webkit-transform: none;
@@ -534,7 +534,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .best__list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -551,7 +551,7 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .best__item {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -560,12 +560,12 @@ footer {
       width: 100%;
       margin-bottom: 1.5625rem; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .best__icon {
     margin-right: 1.25rem;
     width: 30%; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .best__desc {
     text-align: left;
     display: block;
@@ -726,7 +726,7 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .footer__container {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -736,7 +736,7 @@ footer {
 .footer__col {
   width: 50%;
   margin-bottom: 0.9375rem; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .footer__col {
       float: none;
       width: 100%;
@@ -756,7 +756,7 @@ footer {
 .footer__col_right {
   text-align: right;
   margin-bottom: 0; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .footer__col_right {
       text-align: center; } }
 
@@ -924,7 +924,7 @@ footer {
       float: none;
       width: 100%; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .hero__left {
     height: 14.375rem; } }
 
@@ -934,7 +934,7 @@ footer {
     .hero__right {
       text-align: center;
       padding: 1.875rem 20% 0; } }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .hero__right {
       padding: 0 3%; } }
 
@@ -1039,7 +1039,7 @@ footer {
   background-repeat: no-repeat;
   text-decoration: none;
   position: relative; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .menu-acco__trigger {
       width: 3.125rem; } }
 
@@ -1059,7 +1059,7 @@ footer {
   left: 50%;
   top: 100%;
   margin-top: -1.25rem; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .menu-acco__trigger-text {
       font-size: 1.625rem; } }
 
@@ -1079,7 +1079,7 @@ footer {
   width: 100%;
   line-height: 1.8;
   display: none; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .menu-acco__text {
       padding: 1.5625rem 0.9375rem; } }
 
@@ -1176,7 +1176,7 @@ footer {
     .order__form {
       margin-left: 0;
       padding: 0 20%; } }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .order__form {
       padding: 0; } }
 
@@ -1195,7 +1195,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .order__form-row {
       margin-bottom: 0.4375rem; } }
 
@@ -1205,7 +1205,7 @@ footer {
   font-weight: 300;
   color: #fff;
   font-size: 0.875rem; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .order__form-label {
       margin-bottom: 0.3125rem; } }
 
@@ -1237,7 +1237,7 @@ footer {
   height: 6.875rem;
   resize: none; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .order__form-buttons .order__form-row {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1465,7 +1465,7 @@ footer {
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   font-size: 0.875rem;
   margin-bottom: 1.5625rem; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .review__title {
       font-size: 1.25rem; } }
 
@@ -1475,7 +1475,7 @@ footer {
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
   margin-bottom: 0.8125rem; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .review__shorttext {
       display: none; } }
 
