@@ -956,7 +956,7 @@ footer {
   max-height: 100%; }
   @media screen and (max-width: 768px) {
     .hero__img {
-      max-width: 45%; } }
+      max-width: 55%; } }
 
 .down-arrow {
   position: absolute;
@@ -1468,6 +1468,9 @@ footer {
   @media screen and (max-width: 500px) {
     .review__title {
       font-size: 1.25rem; } }
+  @media screen and (max-width: 768px) {
+    .review__title {
+      margin-bottom: 0.0625rem; } }
 
 .review__shorttext {
   color: #ffffff;

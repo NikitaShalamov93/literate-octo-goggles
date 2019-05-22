@@ -49,6 +49,10 @@
   }
 }
 
+.section__title {
+  
+}
+
 .hero__desc {
   font-size: rem(65px);
   color: white;
@@ -66,7 +70,7 @@
   max-height: 100%;
 
   @include tablets {
-    max-width: 45%;
+    max-width: 55%;
   }
 }
 
