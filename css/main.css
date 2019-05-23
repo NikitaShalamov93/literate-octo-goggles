@@ -1080,8 +1080,7 @@ footer {
   color: #fff;
   padding: 3.75rem 1.875rem;
   width: 100%;
-  line-height: 1.8;
-  display: none; }
+  line-height: 1.8; }
   @media screen and (max-width: 535px) {
     .menu-acco__text {
       padding: 1.5625rem 0.9375rem; } }
@@ -1568,6 +1567,13 @@ footer {
       -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
       transform: rotate(-180deg); }
+  .team-acco__item.active .team-acco__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .team-acco__trigger {
   color: #fff;

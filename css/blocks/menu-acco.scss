@@ -24,7 +24,7 @@
 	float: left;
 	@include cover;
 	text-decoration: none;
-  position: relative;
+    position: relative;
   
   @include phones {
     width: rem(50px);
@@ -64,7 +64,7 @@
 	padding: rem(60px) rem(30px);
 	width: 100%;
   line-height: 1.8;
-  display: none;
+
 
   @include phones {
     padding: rem(25px) rem(15px);

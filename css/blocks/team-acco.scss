@@ -22,9 +22,13 @@
 			&:before {
 				transform: rotate(-180deg);
 			}
+            }
+         .team-acco__content {
+                display: flex;
+                align-items: center;
+            }
 		}
 	}
-}
 
 .team-acco__trigger {
 	color: #fff;
@@ -75,7 +79,7 @@
 .team-acco__content {
 	@extend %clearfix;
 	padding-top: rem(14px);
-	display: none;
+    display: none;
 
 	@include tablets {
 		padding: 0 25%;

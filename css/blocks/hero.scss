@@ -72,6 +72,9 @@
   @include tablets {
     max-width: 55%;
   }
+  @include phones {
+   
+  }
 }
 
 .down-arrow {
