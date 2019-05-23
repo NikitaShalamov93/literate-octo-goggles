@@ -17,6 +17,10 @@
 	font-size: rem(72px);
 	@include gagalin;
 	margin-bottom: rem(12px);
+    
+    @include phones {
+     font-size: 3.125rem;   
+    }
 
 	&.section__title_black {
 		color: $black;

@@ -5,6 +5,11 @@
   display: flex;
   align-items: center;
   background-position: center center;
+    
+    @include phones {
+    min-height: rm(800px);
+     
+    }
   .section__title {
     margin-bottom: rem(80px);
     @include tablets {
