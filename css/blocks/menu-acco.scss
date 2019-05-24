@@ -9,11 +9,15 @@
 .menu-acco__item {
 	float: left;
 	height: 100%;
+    display: flex;
 
 	&.active {
 		.menu-acco__trigger-text {
 			color: $yellow;
 		}
+        .menu-acco__content {
+            display: block;
+        }
 	}
 }
 
@@ -54,8 +58,10 @@
 	height: 100%;
 	float: left;
 	background: rgba(#2f3234, .93);
-	width: 0;
+	width: 300px;
 	overflow: hidden;
+    display: none;
+
 }
 
 .menu-acco__text {
@@ -64,7 +70,7 @@
 	color: #fff;
 	padding: rem(60px) rem(30px);
 	width: 100%;
-  line-height: 1.8;
+    line-height: 1.8;
 
 
   @include phones {
