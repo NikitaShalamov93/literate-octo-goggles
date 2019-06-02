@@ -1012,7 +1012,7 @@ footer {
 .burger {
   display: none;
   position: fixed;
-  top: 40px;
+  top: 35px;
   right: 20px;
   width: 30px;
   height: 20px;
@@ -1900,6 +1900,7 @@ footer {
 
 .slider__square {
   position: absolute;
+  z-index: 100;
   left: 0;
   top: 0;
   width: 90px;
