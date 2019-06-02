@@ -4,7 +4,16 @@
     background-size: cover;
     position: relative;
 }
-
+.slider__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 50%;
+    width: 40px;
+    height: 40px;
+}
 .slider__content {
     display: flex;
 }
@@ -44,17 +53,19 @@
     justify-content: flex-start;
     position: absolute;
     top: 50%;
-    width: 40px;
+    max-width: 100%;
+    max-height: 100%;
     
     &_right {
         right: 0;
-        transform: rotate(-90deg)
+        transform: translate(-50%, -50%) rotate(90deg);
+        transform-origin: 0 0;
          
     }
     
     &_left {
         left: 0;
-        transform: rotate(90deg)
+        transform: translate(-50%, -50%) rotate(90deg);
          
     }
 }
