@@ -2003,6 +2003,9 @@ footer {
   max-width: 100%;
   max-height: 100%; }
 
+.slider__500 {
+  font-size: 72px; }
+
 .slider__title {
   color: #ffffff;
   font-size: 14px;
