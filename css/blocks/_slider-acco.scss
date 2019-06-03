@@ -6,6 +6,8 @@
 }
 .slider__item {
     display: flex;
+    align-items: center;
+    text-align: center;
     position: relative;
     flex-shrink: 0;
     width: 100%;
@@ -73,10 +75,12 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 30;
     
     @include tablets {
+        left: initial;
         right: 0;
-        bottom: 0;
+        top: 0;
     }
 }
 .slider__kkal {
@@ -91,10 +95,17 @@
     color: #ffffff;
     font-family: 'Gagalin-regular';
     font-size: 72px;
+    text-align: left;
     
     @include tablets {
         text-align: center;
     }
+}
+.slider__right--text {
+    text-align: left;
+}
+.slider__right--price {
+    text-align: left;
 }
 .slider__arrow {
     display: flex;
