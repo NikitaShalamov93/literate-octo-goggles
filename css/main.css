@@ -444,7 +444,6 @@ body {
 
 body {
   font-size: 1rem;
-  line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   position: relative;
   font-family: 'Ubuntu', Helvetica, sans-serif;
@@ -1900,7 +1899,16 @@ footer {
 
 .slider__img {
   max-width: 100%;
-  max-height: 100%; }
+  max-height: 100%;
+  padding-top: 80px;
+  padding-bottom: 100px; }
+  @media screen and (max-width: 768px) {
+    .slider__img {
+      padding-top: 0px;
+      padding-bottom: 0px; } }
+  .slider__img .slider__img--block {
+    max-width: 455px;
+    max-height: 320px; }
 
 .slider__left {
   -webkit-box-flex: 1;
