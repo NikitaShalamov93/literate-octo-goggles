@@ -94,18 +94,29 @@
         top: 0;
     }
 }
+.slider__kkal--text {
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: 'Gagalin-Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.02px;
+}
 .slider__kkal {
-    
-   
     opacity: .5;
     max-width: 100%;
     max-height: 100%;
 }
-
+.slider__title {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Gagalin-Regular';
+    font-weight: 400;
+}
 .slider__right--title {
     color: #ffffff;
     font-family: 'Gagalin-regular';
-    font-size: 72px;
+    font-size: rem(72px);
     text-align: left;
     
     @include tablets {
@@ -118,6 +129,7 @@
     color: #fff;
     font-size: 14px;
     font-weight: 300;
+    line-height: 24.02px;
     
     @include tablets{
         text-align: center;
@@ -128,6 +140,17 @@
     font-family: 'Gagalin-regular';
     color: #e35028;
     font-size: 30px;
+}
+.slider__block {
+    display: flex;
+   
+    @include tablets {
+           justify-content: center;
+    }
+    
+    @include phones {
+           justify-content: center;
+    }
 }
 .slider__arrow {
     display: flex;

@@ -1238,6 +1238,19 @@ footer {
       -ms-flex-align: center;
       align-items: center;
       font-size: 36px; } }
+  @media screen and (max-width: 768px) {
+    .nav__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 36px; } }
   .nav__item:last-child {
     margin-right: 0; }
     .nav__item:last-child:after {
@@ -1977,15 +1990,29 @@ footer {
       right: 0;
       top: 0; } }
 
+.slider__kkal--text {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: 'Gagalin-Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24.02px; }
+
 .slider__kkal {
   opacity: .5;
   max-width: 100%;
   max-height: 100%; }
 
+.slider__title {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Gagalin-Regular';
+  font-weight: 400; }
+
 .slider__right--title {
   color: #ffffff;
   font-family: 'Gagalin-regular';
-  font-size: 72px;
+  font-size: 4.5rem;
   text-align: left; }
   @media screen and (max-width: 768px) {
     .slider__right--title {
@@ -1996,7 +2023,8 @@ footer {
   font-family: 'Ubuntu';
   color: #fff;
   font-size: 14px;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 24.02px; }
   @media screen and (max-width: 768px) {
     .slider__right--text {
       text-align: center; } }
@@ -2006,6 +2034,21 @@ footer {
   font-family: 'Gagalin-regular';
   color: #e35028;
   font-size: 30px; }
+
+.slider__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .slider__block {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media screen and (max-width: 535px) {
+    .slider__block {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .slider__arrow {
   display: -webkit-box;

@@ -52,6 +52,13 @@
         align-items: center;
         font-size: 36px;
     }
+    
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 36px;
+    }
 
 	&:last-child {
 		margin-right: 0;
