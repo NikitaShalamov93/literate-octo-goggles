@@ -103,9 +103,20 @@
 }
 .slider__right--text {
     text-align: left;
+    font-family: 'Ubuntu';
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    
+    @include tablets{
+        text-align: center;
+    }
 }
 .slider__right--price {
     text-align: left;
+    font-family: 'Gagalin';
+    color: #e35028;
+    font-size: 30px;
 }
 .slider__arrow {
     display: flex;

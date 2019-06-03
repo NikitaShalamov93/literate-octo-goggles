@@ -479,7 +479,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0;
   font-weight: normal; }
 
 table {
@@ -1984,10 +1984,20 @@ footer {
       text-align: center; } }
 
 .slider__right--text {
-  text-align: left; }
+  text-align: left;
+  font-family: 'Ubuntu';
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300; }
+  @media screen and (max-width: 768px) {
+    .slider__right--text {
+      text-align: center; } }
 
 .slider__right--price {
-  text-align: left; }
+  text-align: left;
+  font-family: 'Gagalin';
+  color: #e35028;
+  font-size: 30px; }
 
 .slider__arrow {
   display: -webkit-box;
