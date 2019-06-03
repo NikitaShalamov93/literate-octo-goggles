@@ -31,10 +31,13 @@
 }
 .slider__left {
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 .slider__right {
     flex: 1;
+
 }
 .slider__square {
     position: absolute;
