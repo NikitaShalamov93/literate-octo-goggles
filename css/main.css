@@ -1863,6 +1863,12 @@ footer {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%; }
+  @media screen and (max-width: 768px) {
+    .slider__item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .slider__link {
   display: -webkit-box;
@@ -1952,6 +1958,10 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0; }
+  @media screen and (max-width: 768px) {
+    .slider__kkal--block {
+      right: 0;
+      bottom: 0; } }
 
 .slider__kkal {
   opacity: .5;
@@ -1962,6 +1972,9 @@ footer {
   color: #ffffff;
   font-family: 'Gagalin-regular';
   font-size: 72px; }
+  @media screen and (max-width: 768px) {
+    .slider__right--title {
+      text-align: center; } }
 
 .slider__arrow {
   display: -webkit-box;

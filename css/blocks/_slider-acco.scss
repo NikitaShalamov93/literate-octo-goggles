@@ -9,6 +9,10 @@
     position: relative;
     flex-shrink: 0;
     width: 100%;
+    
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .slider__link {
     display: flex;
@@ -69,6 +73,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    
+    @include tablets {
+        right: 0;
+        bottom: 0;
+    }
 }
 .slider__kkal {
     
@@ -82,6 +91,10 @@
     color: #ffffff;
     font-family: 'Gagalin-regular';
     font-size: 72px;
+    
+    @include tablets {
+        text-align: center;
+    }
 }
 .slider__arrow {
     display: flex;
