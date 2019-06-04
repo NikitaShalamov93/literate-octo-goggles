@@ -503,6 +503,9 @@ footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.section {
+  min-height: 40.625rem; }
+
 .best {
   background: url("../img/bg/bg2section.jpg") no-repeat;
   background-size: cover;
@@ -2044,20 +2047,17 @@ footer {
   color: #e35028;
   font-size: 30px; }
 
-.slider__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  @media screen and (max-width: 768px) {
-    .slider__block {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
-  @media screen and (max-width: 535px) {
-    .slider__block {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
+@media screen and (max-width: 768px) {
+  .slider__block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 535px) {
+  .slider__block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 .slider__arrow {
   display: -webkit-box;
@@ -2088,11 +2088,13 @@ footer {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     max-width: 100%;
-    max-height: 100%; }
+    max-height: 100%;
+    z-index: 100; }
 
 .slider__link_left {
   position: absolute;
-  left: 0; }
+  left: 0;
+  z-index: 101; }
 
 .slider__link_right {
   position: absolute;
