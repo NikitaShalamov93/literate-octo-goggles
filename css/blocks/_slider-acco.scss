@@ -152,7 +152,8 @@
     font-size: 30px;
 }
 .slider__block {
-    
+    display: flex;
+    align-items:flex-end;
    
     @include tablets {
            justify-content: center;
@@ -161,6 +162,10 @@
     @include phones {
            justify-content: center;
     }
+}
+.slider__link__btn {
+    margin: 0 0 10px 15px;
+    border: transparent;
 }
 .slider__arrow {
     display: flex;

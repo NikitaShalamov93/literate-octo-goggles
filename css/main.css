@@ -2047,17 +2047,27 @@ footer {
   color: #e35028;
   font-size: 30px; }
 
-@media screen and (max-width: 768px) {
-  .slider__block {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+.slider__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  @media screen and (max-width: 768px) {
+    .slider__block {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media screen and (max-width: 535px) {
+    .slider__block {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
-@media screen and (max-width: 535px) {
-  .slider__block {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+.slider__link__btn {
+  margin: 0 0 10px 15px;
+  border: transparent; }
 
 .slider__arrow {
   display: -webkit-box;
