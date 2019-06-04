@@ -1917,7 +1917,13 @@ footer {
   padding-bottom: 100px; }
   @media screen and (max-width: 768px) {
     .slider__img {
-      padding-top: 0px;
+      max-width: 80%;
+      padding-top: 100px;
+      padding-bottom: 0px; } }
+  @media screen and (max-width: 535px) {
+    .slider__img {
+      max-width: 70%;
+      padding-top: 100px;
       padding-bottom: 0px; } }
   .slider__img .slider__img--block {
     max-width: 455px;
@@ -2070,27 +2076,27 @@ footer {
   .slider__arrow_right {
     position: absolute;
     right: 0;
-    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
-    -ms-transform: translate(-50%, -50%) rotate(-90deg);
-    transform: translate(-50%, -50%) rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     max-width: 100%;
     max-height: 100%; }
   .slider__arrow_left {
     position: absolute;
     left: 0;
-    -webkit-transform: translate(-50%, -50%) rotate(90deg);
-    -ms-transform: translate(-50%, -50%) rotate(90deg);
-    transform: translate(-50%, -50%) rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
     max-width: 100%;
     max-height: 100%; }
 
 .slider__link_left {
   position: absolute;
-  left: -2.5rem; }
+  left: 0; }
 
 .slider__link_right {
   position: absolute;
-  right: -2.5rem; }
+  right: 0; }
 
 .slider-wrap {
   position: relative;
