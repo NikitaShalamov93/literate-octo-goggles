@@ -1904,8 +1904,8 @@ footer {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   top: 50%;
-  width: 40px;
-  height: 40px; }
+  width: 2.5rem;
+  height: 2.5rem; }
 
 .slider__list {
   display: -webkit-box;
@@ -1916,12 +1916,12 @@ footer {
 .slider__img {
   max-width: 100%;
   max-height: 100%;
-  padding-top: 80px;
-  padding-bottom: 100px; }
+  padding-top: 5rem;
+  padding-bottom: 6.25rem; }
   @media screen and (max-width: 768px) {
     .slider__img {
       max-width: 80%;
-      padding-top: 100px;
+      padding-top: 6.25rem;
       padding-bottom: 0px; } }
   @media screen and (max-width: 535px) {
     .slider__img {
@@ -1929,8 +1929,8 @@ footer {
       padding-top: 100px;
       padding-bottom: 0px; } }
   .slider__img .slider__img--block {
-    max-width: 455px;
-    max-height: 320px; }
+    max-width: 28.4375rem;
+    max-height: 20rem; }
 
 .slider__left {
   -webkit-box-flex: 1;
@@ -1953,8 +1953,8 @@ footer {
   z-index: 100;
   left: 0;
   top: 0;
-  width: 90px;
-  height: 90px;
+  width: 5.625rem;
+  height: 5.625rem;
   background-color: #e35028;
   opacity: 0.4;
   border-radius: 5px;
@@ -1973,12 +1973,12 @@ footer {
   justify-content: center; }
 
 .slider__burger {
-  width: 40px;
-  height: 40px; }
+  width: 2.5rem;
+  height: 2.5rem; }
 
 .slider__kkal--block {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2003,9 +2003,9 @@ footer {
   opacity: 0.5;
   color: #ffffff;
   font-family: 'Gagalin-Regular';
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 24.02px; }
+  line-height: 1.50125rem; }
 
 .slider__kkal {
   opacity: .5;
@@ -2013,7 +2013,7 @@ footer {
   max-height: 100%; }
 
 .slider__500 {
-  font-size: 72px; }
+  font-size: 4.5rem; }
 
 .slider__title {
   color: #ffffff;
@@ -2026,7 +2026,7 @@ footer {
   font-family: 'Gagalin-regular';
   font-size: 4.5rem;
   text-align: left;
-  margin-top: -40px; }
+  margin-top: -2.5rem; }
   @media screen and (max-width: 768px) {
     .slider__right--title {
       text-align: center;
@@ -2040,11 +2040,11 @@ footer {
   text-align: left;
   font-family: 'Ubuntu';
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 24.02px;
   margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 0.625rem; }
   @media screen and (max-width: 768px) {
     .slider__right--text {
       text-align: center;
@@ -2059,12 +2059,12 @@ footer {
   text-align: left;
   font-family: 'Gagalin-regular';
   color: #e35028;
-  font-size: 30px; }
+  font-size: 1.875rem; }
 
 .slider__kkal--numbers {
   position: absolute;
   top: 40%;
-  font-size: 20px; }
+  font-size: 1.25rem; }
 
 .slider__block {
   display: -webkit-box;

@@ -23,8 +23,8 @@
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    width: 40px;
-    height: 40px;
+    width: rem(40px);
+    height: rem(40px);
 }
 .slider__list {
     display: flex;
@@ -34,12 +34,12 @@
 .slider__img {
     max-width: 100%;
     max-height: 100%;
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: rem(80px);
+    padding-bottom: rem(100px);
     
     @include tablets{
         max-width: 80%;
-        padding-top: 100px;
+        padding-top: rem(100px);
         padding-bottom: 0px;    
     }
     
@@ -49,8 +49,8 @@
         padding-bottom: 0px;    
     }
     .slider__img--block {
-        max-width: 455px;
-        max-height: 320px;
+        max-width: rem(455px);
+        max-height: rem(320px);
     }
 }
 .slider__left {
@@ -68,8 +68,8 @@
     z-index: 100;
     left: 0;
     top: 0;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background-color: #e35028;
     opacity: 0.4;
     border-radius: 5px;
@@ -80,13 +80,13 @@
 }
 
 .slider__burger {
-    width: 40px;
-    height: 40px;
+    width: rem(40px);
+    height: rem(40px);
 }
 
 .slider__kkal--block {
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,9 +105,9 @@
     opacity: 0.5;
     color: #ffffff;
     font-family: 'Gagalin-Regular';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
-    line-height: 24.02px;
+    line-height: rem(24.02px);
 }
 .slider__kkal {
     opacity: .5;
@@ -115,7 +115,7 @@
     max-height: 100%;
 }
 .slider__500 {
-    font-size: 72px;
+    font-size: rem(72px);
 }
 .slider__title {
     color: #ffffff;
@@ -128,7 +128,7 @@
     font-family: 'Gagalin-regular';
     font-size: rem(72px);
     text-align: left;
-    margin-top: -40px;
+    margin-top: rem(-40px);
     
     @include tablets {
         text-align: center;
@@ -144,11 +144,11 @@
     text-align: left;
     font-family: 'Ubuntu';
     color: #fff;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     line-height: 24.02px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     
     @include tablets{
         text-align: center;
@@ -165,12 +165,12 @@
     text-align: left;
     font-family: 'Gagalin-regular';
     color: #e35028;
-    font-size: 30px;
+    font-size: rem(30px);
 }
 .slider__kkal--numbers {
     position: absolute;
     top: 40%;
-    font-size: 20px;
+    font-size: rem(20px);
 }
 .slider__block {
     display: flex;
