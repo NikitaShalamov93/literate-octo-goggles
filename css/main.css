@@ -1227,7 +1227,8 @@ footer {
 
 .nav__item {
   white-space: nowrap;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 0.8125rem; }
   @media screen and (max-width: 535px) {
     .nav__item {
       display: -webkit-box;
@@ -1240,7 +1241,7 @@ footer {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      font-size: 36px; } }
+      font-size: 6px; } }
   @media screen and (max-width: 768px) {
     .nav__item {
       display: -webkit-box;
@@ -1253,7 +1254,7 @@ footer {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      font-size: 36px; } }
+      font-size: 20px; } }
   .nav__item:last-child {
     margin-right: 0; }
     .nav__item:last-child:after {
@@ -1272,7 +1273,6 @@ footer {
 .nav__link {
   display: inline-block;
   vertical-align: middle;
-  font-size: 0.8125rem;
   text-transform: uppercase;
   color: white;
   text-decoration: none;
@@ -1779,12 +1779,11 @@ footer {
 
 .team-acco__pic {
   text-align: center;
-  width: 18%;
-  margin-right: 20px; }
-  @media screen and (max-width: 768px) {
+  width: 30%; }
+  @media screen and (max-width: 992px) {
     .team-acco__pic {
-      margin-bottom: 0.9375rem;
-      margin-right: 0px; } }
+      width: 30%;
+      margin-bottom: 0.9375rem; } }
 
 .team-acco__img {
   display: inline-block;
