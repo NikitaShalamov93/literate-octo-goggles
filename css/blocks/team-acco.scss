@@ -26,6 +26,11 @@
          .team-acco__content {
                 display: flex;
                 align-items: center;
+             
+             @include tablets {
+                 flex-direction: column;
+                 
+             }
             }
 		}
 	}

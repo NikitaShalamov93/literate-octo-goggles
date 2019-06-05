@@ -1723,6 +1723,12 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media screen and (max-width: 768px) {
+      .team-acco__item.active .team-acco__content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
 
 .team-acco__trigger {
   color: #fff;
