@@ -35,3 +35,29 @@ let teamAccojs = () => {
 };
 teamAccojs();
 
+const left = document.querySelector(".slider__link_left");
+const right = document.querySelector(".slider__arrow_right");
+const items = document.querySelector(".slider__list");
+
+const minRight = 0;
+const maxRight = 600;
+const step = 100;
+let currentRight = 0;
+
+items.style.right = currentRight;
+
+right.addEventListener("click", function() {
+  if (currentRight < maxRight) {
+    currentRight += step;
+    items.style.right = currentRight + "px";
+  }
+});
+
+left.addEventListener("click", function() {
+  if (currentRight > minRight) {
+    currentRight -= step;
+    items.style.right = currentRight + "px";
+  }
+});
+
+
