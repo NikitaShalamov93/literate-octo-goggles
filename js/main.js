@@ -35,29 +35,34 @@ let teamAccojs = () => {
 };
 teamAccojs();
 
-const left = document.querySelector(".slider__link_left");
-const right = document.querySelector(".slider__arrow_right");
-const items = document.querySelector(".slider__list");
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const items = document.querySelector("#items");
+const computed = getComputedStyle(items);
 
-const minRight = 0;
-const maxRight = 600;
-const step = 100;
-let currentRight = 0;
 
-items.style.right = currentRight;
+right.addEventListener("click", function(e) {
+  e.preventDefault();
+  let currentRight = parseInt(computed.right);
 
-right.addEventListener("click", function() {
-  if (currentRight < maxRight) {
-    currentRight += step;
-    items.style.right = currentRight + "px";
+  if (!currentRight) {
+    currentRight = 0;
+  }
+  
+  if (currentRight < 500) {
+    items.style.right = currentRight + 100 + "px";
   }
 });
 
-left.addEventListener("click", function() {
-  if (currentRight > minRight) {
-    currentRight -= step;
-    items.style.right = currentRight + "px";
+left.addEventListener("click", function(e) {
+  e.preventDefault();
+  let currentRight = parseInt(computed.right);
+
+  if (!currentRight) {
+    currentRight = 0;
+  }
+
+  if (currentRight > 0) {
+    items.style.right = currentRight - 100 + "px";
   }
 });
-
-
