@@ -1779,10 +1779,12 @@ footer {
 
 .team-acco__pic {
   text-align: center;
-  width: 30%; }
+  width: 18%;
+  margin-right: 20px; }
   @media screen and (max-width: 768px) {
     .team-acco__pic {
-      margin-bottom: 0.9375rem; } }
+      margin-bottom: 0.9375rem;
+      margin-right: 0px; } }
 
 .team-acco__img {
   display: inline-block;
