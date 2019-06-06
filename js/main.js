@@ -35,100 +35,100 @@ let teamAccojs = () => {
 };
 teamAccojs();
 
-/* ГОРИЗОНТАЛЬНЫЙ СЛАЙДЕР */
+/* ГОРИЗОНТАЛЬНЫЙ СЛАЙДЕР */ 
 
-function downSlider() {
+function downSlider() { 
 
-let slideIndex = 1,
+let slideIndex = 1, 
 
-//Текущий слайд
+//Текущий слайд 
 
-slides = document.getElementsByClassName('slider__item'),
+slides = document.getElementsByClassName('slider__item'), 
 
-//Получаем псевдомассив слайдов
-
-
-
-//Получаем контейнер слайдера
-
-prev = document.querySelector('.slider__link_left'),
-
-//Стрелка влево
-
-next = document.querySelector('.slider__link_right');
-
-//Стрелка вправо
+//Получаем псевдомассив слайдов 
 
 
 
-//Основная функция слайдера
+//Получаем контейнер слайдера 
 
-function horizontalSlider(n) {
+prev = document.querySelector('.slider__link_left'), 
 
-if (n > slides.length) {
+//Стрелка влево 
 
-//Возврат к первому слайду после перебора всего псевдомассива слайдов
+next = document.querySelector('.slider__link_right'); 
 
-slideIndex = 1;
+//Стрелка вправо 
 
-};
 
-if (n < 1) {
 
-//Возврат в конец псевдомассива после перебора всего псевдомассива слайдов в оратном направлении
+//Основная функция слайдера 
 
-slideIndex = slides.length;
+function horizontalSlider(n) { 
 
-};
+if (n > slides.length) { 
 
-//Скрытие через цикл всех слайдов
+//Возврат к первому слайду после перебора всего псевдомассива слайдов 
 
-for (let i = 0; i < slides.length; i++) {
-slides[i].style.display = 'none';
+slideIndex = 1; 
 
-};
+}; 
 
-//Установка видимости текущего слайда
-slides[slideIndex - 1].style.display = 'block';
+if (n < 1) { 
 
-};
+//Возврат в конец псевдомассива после перебора всего псевдомассива слайдов в оратном направлении 
 
-//Функции увеличения индекса активного слайда.
+slideIndex = slides.length; 
 
-//Получают данные (n) из обработчика событий prev и next
+}; 
 
-function plusSlides(n) {
+//Скрытие через цикл всех слайдов 
 
-horizontalSlider(slideIndex += n);
+for (let i = 0; i < slides.length; i++) { 
+slides[i].style.display = 'none'; 
 
-};
+}; 
 
-function currentSlide(n) {
+//Установка видимости текущего слайда 
+slides[slideIndex - 1].style.display = 'flex'; 
 
-horizontalSlider(slideIndex = n);
+}; 
 
-};
+//Функции увеличения индекса активного слайда. 
 
-//Переключение на один слайд назад по клику
+//Получают данные (n) из обработчика событий prev и next 
 
-prev.addEventListener('click', function (e) {
-e.preventDefault();
-plusSlides(1);
+function plusSlides(n) { 
 
-});
+horizontalSlider(slideIndex += n); 
 
-//Переключение на один слайд вперед по клику
+}; 
 
-next.addEventListener('click', function (e) {
-e.preventDefault();
-plusSlides(1);
+function currentSlide(n) { 
 
-});
+horizontalSlider(slideIndex = n); 
 
-//Запуск слайдера
+}; 
 
-horizontalSlider(slideIndex);
+//Переключение на один слайд назад по клику 
 
-};
+prev.addEventListener('click', function (e) { 
+e.preventDefault(); 
+plusSlides(1); 
+
+}); 
+
+//Переключение на один слайд вперед по клику 
+
+next.addEventListener('click', function (e) { 
+e.preventDefault(); 
+plusSlides(1); 
+
+}); 
+
+//Запуск слайдера 
+
+horizontalSlider(slideIndex); 
+
+}; 
 
 downSlider();
