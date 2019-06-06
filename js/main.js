@@ -35,34 +35,100 @@ let teamAccojs = () => {
 };
 teamAccojs();
 
-const left = document.querySelector("#left");
-const right = document.querySelector("#right");
-const items = document.querySelector("#items");
-const computed = getComputedStyle(items);
+/* ГОРИЗОНТАЛЬНЫЙ СЛАЙДЕР */
+
+function downSlider() {
+
+let slideIndex = 1,
+
+//Текущий слайд
+
+slides = document.getElementsByClassName('slider__item'),
+
+//Получаем псевдомассив слайдов
 
 
-right.addEventListener("click", function(e) {
-  e.preventDefault();
-  let currentRight = parseInt(computed.right);
 
-  if (!currentRight) {
-    currentRight = 0;
-  }
-  
-  if (currentRight < 500) {
-    items.style.right = currentRight + 940 + "px";
-  }
+//Получаем контейнер слайдера
+
+prev = document.querySelector('.slider__link_left'),
+
+//Стрелка влево
+
+next = document.querySelector('.slider__link_right');
+
+//Стрелка вправо
+
+
+
+//Основная функция слайдера
+
+function horizontalSlider(n) {
+
+if (n > slides.length) {
+
+//Возврат к первому слайду после перебора всего псевдомассива слайдов
+
+slideIndex = 1;
+
+};
+
+if (n < 1) {
+
+//Возврат в конец псевдомассива после перебора всего псевдомассива слайдов в оратном направлении
+
+slideIndex = slides.length;
+
+};
+
+//Скрытие через цикл всех слайдов
+
+for (let i = 0; i < slides.length; i++) {
+slides[i].style.display = 'none';
+
+};
+
+//Установка видимости текущего слайда
+slides[slideIndex - 1].style.display = 'block';
+
+};
+
+//Функции увеличения индекса активного слайда.
+
+//Получают данные (n) из обработчика событий prev и next
+
+function plusSlides(n) {
+
+horizontalSlider(slideIndex += n);
+
+};
+
+function currentSlide(n) {
+
+horizontalSlider(slideIndex = n);
+
+};
+
+//Переключение на один слайд назад по клику
+
+prev.addEventListener('click', function () {
+
+plusSlides(-1);
+
 });
 
-left.addEventListener("click", function(e) {
-  e.preventDefault();
-  let currentRight = parseInt(computed.right);
+//Переключение на один слайд вперед по клику
 
-  if (!currentRight) {
-    currentRight = 0;
-  }
+next.addEventListener('click', function () {
 
-  if (currentRight > 0) {
-    items.style.right = currentRight - 940 + "px";
-  }
+plusSlides(1);
+
 });
+
+//Запуск слайдера
+
+horizontalSlider(slideIndex);
+
+};
+
+downSlider();
