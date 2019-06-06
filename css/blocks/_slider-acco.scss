@@ -48,11 +48,12 @@
         padding-top: 100px;
         padding-bottom: 0px;    
     }
-    .slider__img--block {
+
+}
+.slider__img--block {
         max-width: rem(455px);
         max-height: rem(320px);
     }
-}
 .slider__left {
     flex: 1;
     display: flex;

@@ -1935,9 +1935,10 @@ footer {
       max-width: 70%;
       padding-top: 100px;
       padding-bottom: 0px; } }
-  .slider__img .slider__img--block {
-    max-width: 28.4375rem;
-    max-height: 20rem; }
+
+.slider__img--block {
+  max-width: 28.4375rem;
+  max-height: 20rem; }
 
 .slider__left {
   -webkit-box-flex: 1;
