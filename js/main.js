@@ -112,7 +112,7 @@ horizontalSlider(slideIndex = n);
 //Переключение на один слайд назад по клику
 
 prev.addEventListener('click', function (e) {
-
+e.preventDefault();
 plusSlides(1);
 
 });
