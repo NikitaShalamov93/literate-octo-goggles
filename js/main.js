@@ -50,7 +50,7 @@ right.addEventListener("click", function(e) {
   }
   
   if (currentRight < 500) {
-    items.style.right = currentRight + 100 + "px";
+    items.style.right = currentRight + 940 + "px";
   }
 });
 
@@ -63,6 +63,6 @@ left.addEventListener("click", function(e) {
   }
 
   if (currentRight > 0) {
-    items.style.right = currentRight - 100 + "px";
+    items.style.right = currentRight - 940 + "px";
   }
 });
