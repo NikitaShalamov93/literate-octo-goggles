@@ -1921,7 +1921,7 @@ footer {
   position: relative; }
 
 .slider__img {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 100%;
   padding-top: 5rem;
   padding-bottom: 6.25rem; }
@@ -1936,10 +1936,6 @@ footer {
       padding-top: 100px;
       padding-bottom: 0px; } }
 
-.slider__img--block {
-  max-width: 28.4375rem;
-  max-height: 20rem; }
-
 .slider__left {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -1949,7 +1945,10 @@ footer {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 80%; }
 
 .slider__right {
   -webkit-box-flex: 1;

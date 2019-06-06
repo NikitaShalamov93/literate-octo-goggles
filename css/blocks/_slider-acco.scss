@@ -32,7 +32,7 @@
 }
 
 .slider__img {
-    max-width: 100%;
+    max-width: 90%;
     max-height: 100%;
     padding-top: rem(80px);
     padding-bottom: rem(100px);
@@ -51,13 +51,15 @@
 
 }
 .slider__img--block {
-        max-width: rem(455px);
-        max-height: rem(320px);
+      
     }
 .slider__left {
     flex: 1;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
+    width: 80%;
+    
 }
 
 .slider__right {
