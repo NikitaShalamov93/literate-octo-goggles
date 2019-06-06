@@ -111,16 +111,16 @@ horizontalSlider(slideIndex = n);
 
 //Переключение на один слайд назад по клику
 
-prev.addEventListener('click', function () {
+prev.addEventListener('click', function (e) {
 
-plusSlides(-1);
+plusSlides(1);
 
 });
 
 //Переключение на один слайд вперед по клику
 
-next.addEventListener('click', function () {
-
+next.addEventListener('click', function (e) {
+e.preventDefault();
 plusSlides(1);
 
 });
