@@ -1955,6 +1955,11 @@ footer {
   -ms-flex: 1;
   flex: 1; }
 
+.indigredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .slider__square {
   position: absolute;
   z-index: 100;
@@ -1979,6 +1984,16 @@ footer {
   justify-content: center; }
   .slider__square:hover {
     background-color: #e35028; }
+    .slider__square:hover .indigredients__dropdown {
+      display: block; }
+
+.indigredients__dropdown {
+  display: none;
+  background-color: antiquewhite;
+  position: absolute;
+  opacity: 0.5;
+  width: 400px;
+  height: 100px; }
 
 .slider__burger {
   width: 2.5rem;
