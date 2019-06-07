@@ -1987,12 +1987,14 @@ footer {
     .slider__square:hover .indigredients__dropdown {
       display: block;
       left: 100%; }
+    .slider__square:hover .indigredients__dropdown-table {
+      display: block; }
 
 .indigredients__dropdown {
   display: none;
   background-color: antiquewhite;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.7;
   width: 280px;
   height: 330px; }
 

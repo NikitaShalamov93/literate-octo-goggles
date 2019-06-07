@@ -90,17 +90,24 @@
             display: block;
             left: 100%;
         }
+        
+        .indigredients__dropdown-table {
+            display: block;
+            
+        }
     }
 }
 .indigredients__dropdown {
     display: none;
     background-color: antiquewhite;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.7;
     width: 280px;
-    height: 330px;
+    height: 330px;  
+}
+
+.indigredients__dropdown-table {
     
-   
 }
 .slider__burger {
     width: rem(40px);
