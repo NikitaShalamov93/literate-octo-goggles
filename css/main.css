@@ -1985,15 +1985,16 @@ footer {
   .slider__square:hover {
     background-color: #e35028; }
     .slider__square:hover .indigredients__dropdown {
-      display: block; }
+      display: block;
+      left: 100%; }
 
 .indigredients__dropdown {
   display: none;
   background-color: antiquewhite;
   position: absolute;
   opacity: 0.5;
-  width: 400px;
-  height: 100px; }
+  width: 280px;
+  height: 330px; }
 
 .slider__burger {
   width: 2.5rem;
