@@ -89,6 +89,7 @@
         .indigredients__dropdown {
             display: block;
             left: 100%;
+            top: 0;
         }
         
         .indigredients__dropdown-table {
@@ -102,8 +103,8 @@
     background-color: antiquewhite;
     position: absolute;
     opacity: 0.7;
-    width: 280px;
-    height: 330px;  
+    width: 280px; 
+    border-radius: 5px;
 }
 
 .indigredients__dropdown-table {
@@ -113,7 +114,9 @@
     width: rem(40px);
     height: rem(40px);
 }
-
+.indigredients__dropdown-img {
+    width: 10%;
+}
 .slider__kkal--block {
     width: rem(100px);
     height: rem(100px);

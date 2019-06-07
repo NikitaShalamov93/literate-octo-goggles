@@ -1986,7 +1986,8 @@ footer {
     background-color: #e35028; }
     .slider__square:hover .indigredients__dropdown {
       display: block;
-      left: 100%; }
+      left: 100%;
+      top: 0; }
     .slider__square:hover .indigredients__dropdown-table {
       display: block; }
 
@@ -1996,11 +1997,14 @@ footer {
   position: absolute;
   opacity: 0.7;
   width: 280px;
-  height: 330px; }
+  border-radius: 5px; }
 
 .slider__burger {
   width: 2.5rem;
   height: 2.5rem; }
+
+.indigredients__dropdown-img {
+  width: 10%; }
 
 .slider__kkal--block {
   width: 6.25rem;
