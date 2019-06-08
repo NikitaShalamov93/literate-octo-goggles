@@ -2,16 +2,31 @@ const burger = document.querySelector(".burger");
 const menu = document.querySelector(".nav");
 
 function trigerMobileMenu() {
-        console.log("function is work!");
+     console.log("function is work!");
     burger.classList.toggle("active");
     menu.classList.toggle("active");
-    document.body.classList.toggle("hidden");
+   document.body.classList.toggle("hidden");
 }
 
 burger.addEventListener("click", function(){
     trigerMobileMenu();
 })
+///метод меню от евгения
+function showMobileMenu() {
+   burger.classList.add("active");
+   menu.classList.add("active");
+   document.body.classList.add("hidden");
+}
 
+function hideMobileMenu() {
+   burger.classList.remove("active");
+   menu.classList.remove("active");
+   document.body.classList.remove("hidden");
+}
+ // И при клике на *burger* вызывать *showMobileMenu()*
+burger.addEventListener("click", function(){
+   showMobileMenu();
+})
 /*Горизонтальный аккордион костыль */
 let teamAccojs = () => {
     let teamList = document.querySelector(".team-acco");
@@ -180,3 +195,38 @@ window.scrollBy(0, section.getBoundingClientRect().top / 15 - 1);
 }, 1200);
 
 });
+
+// reviews открыть всплывающий текст
+
+const openButton = document.querySelector("#openOverlay");
+const successOverlay = openOverlay("Привет, <b>loftschool</b>!");
+
+openButton.addEventListener("click", function() {
+  document.body.appendChild(successOverlay);
+});
+
+function openOverlay(content) {
+  const overlayElement = document.createElement("div");
+  overlayElement.classList.add("overlay");
+
+  const containerElement = document.createElement("div");
+  containerElement.classList.add("container");
+
+  const contentElement = document.createElement("div");
+  contentElement.classList.add("content");
+  contentElement.innerHTML = content;
+
+  const closeElement = document.createElement("a");
+  closeElement.classList.add("close");
+  closeElement.textContent = "x";
+  closeElement.href = "#";
+  closeElement.addEventListener("click", function() {
+    document.body.removeChild(overlayElement);
+  });
+
+  overlayElement.appendChild(containerElement);
+  containerElement.appendChild(closeElement);
+  containerElement.appendChild(contentElement);
+
+  return overlayElement;
+}
