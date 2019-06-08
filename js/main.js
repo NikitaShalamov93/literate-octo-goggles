@@ -175,7 +175,7 @@ let target = event.target,
 
 section = document.getElementById(target.getAttribute('href').slice(1));
 
-window.scrollBy(0, section.getBoundingClientRect().top / 20 - 3);
+window.scrollBy(0, section.getBoundingClientRect().top / 5 - 3);
 
 }, 1200);
 
