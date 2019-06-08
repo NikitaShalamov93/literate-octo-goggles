@@ -166,7 +166,7 @@ requestAnimationFrame(animate);
 let navigation = document.getElementsByTagName('nav')[0];
 
 navigation.addEventListener('click', function(event) {
-
+trigerMobileMenu();
 event.preventDefault();
 
 animate(function(timePassed) {
@@ -175,7 +175,7 @@ let target = event.target,
 
 section = document.getElementById(target.getAttribute('href').slice(1));
 
-window.scrollBy(0, section.getBoundingClientRect().top / 5 - 3);
+window.scrollBy(0, section.getBoundingClientRect().top / 15 - 1);
 
 }, 1200);
 
