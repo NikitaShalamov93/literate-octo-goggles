@@ -230,150 +230,108 @@ function openOverlay(content) {
 
   return overlayElement;
 }
-//////////////////////////////////////////////////////////////////////////////////////////////
-Проба
-/////////////////////////////////////////////////////////////////////////////////////////////
+
 function changeCurrentEq(index) {
   currentEq = index;
 } // TouchScreen
 
 
-var hammer = new Hammer(document.documentElement);
-hammer.get('swipe').set({
-  direction: Hammer.DIRECTION_VERTICAL
-});
-hammer.on('swipeup', function () {
-  if (currentEq >= sections.length - 1) {
-    return;
-  }
+// var hammer = new Hammer(document.documentElement);
+// hammer.get('swipe').set({
+//   direction: Hammer.DIRECTION_VERTICAL
+// });
+// hammer.on('swipeup', function () {
+//   if (currentEq >= sections.length - 1) {
+//     return;
+//   }
 
-  if (!inScroll) {
-    onePageScroll(currentEq += 1);
-  }
-});
-hammer.on('swipedown', function () {
-  if (currentEq <= 0) {
-    return;
-  }
+//   if (!inScroll) {
+//     onePageScroll(currentEq += 1);
+//   }
+// });
+// hammer.on('swipedown', function () {
+//   if (currentEq <= 0) {
+//     return;
+//   }
 
-  if (!inScroll) {
-    onePageScroll(currentEq -= 1);
-  }
-});
-///////////////////////////////////////////////////////
+//   if (!inScroll) {
+//     onePageScroll(currentEq -= 1);
+//   }
+// });
+/////////////////////////////////////////////////////
 
-//////////////////////////////////////////////////////
-var hammer = new Hammer(document.documentElement);
-hammer.get('swipe').set({
-  direction: Hammer.DIRECTION_VERTICAL
-});
-hammer.on('swipeup', function () {
-  if (currentEq >= sections.length - 1) {
-    return;
-  }
+////////////////////////////////////////////////////
+// var hammer = new Hammer(document.documentElement);
+// hammer.get('swipe').set({
+//   direction: Hammer.DIRECTION_VERTICAL
+// });
+// hammer.on('swipeup', function () {
+//   if (currentEq >= sections.length - 1) {
+//     return;
+//   }
 
-  if (!inScroll) {
-    onePageScroll(currentEq += 1);
-  }
-});
-hammer.on('swipedown', function () {
-  if (currentEq <= 0) {
-    return;
-  }
+//   if (!inScroll) {
+//     onePageScroll(currentEq += 1);
+//   }
+// });
+// hammer.on('swipedown', function () {
+//   if (currentEq <= 0) {
+//     return;
+//   }
 
-  if (!inScroll) {
-    onePageScroll(currentEq -= 1);
-  }
-}); // mouseWheel
+//   if (!inScroll) {
+//     onePageScroll(currentEq -= 1);
+//   }
+// }); 
 
-document.addEventListener('wheel', function (event) {
-  function wheelDirection() {
-    var delta = event.deltaY,
-        direction = delta > 0 ? 'down' : 'up';
-    return direction;
-  }
+// mouseWheel
 
-  function scrollToSection() {
-    var dir = wheelDirection();
+// document.addEventListener('wheel', function (event) {
+//   function wheelDirection() {
+//     var delta = event.deltaY,
+//         direction = delta > 0 ? 'down' : 'up';
+//     return direction;
+//   }
 
-    if (dir === 'down') {
-      if (currentEq >= sections.length - 1) {
-        return;
-      }
+//   function scrollToSection() {
+//     var dir = wheelDirection();
 
-      if (!inScroll) {
-        onePageScroll(currentEq += 1);
-      }
-    } else {
-      if (currentEq <= 0) {
-        return;
-      }
+//     if (dir === 'down') {
+//       if (currentEq >= sections.length - 1) {
+//         return;
+//       }
 
-      if (!inScroll) {
-        onePageScroll(currentEq -= 1);
-      }
-    }
-  }
+//       if (!inScroll) {
+//         onePageScroll(currentEq += 1);
+//       }
+//     } else {
+//       if (currentEq <= 0) {
+//         return;
+//       }
 
-  scrollToSection();
-}); // Bullets
+//       if (!inScroll) {
+//         onePageScroll(currentEq -= 1);
+//       }
+//     }
+//   }
+
+//   scrollToSection();
+// }); 
+
+// Bullets
 
 
-//////////////////////////
-////////////////////////////
-eAccordeon(element, {
-  items: [
-    {
-      title: "Элемент 1",
-      content:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt dolores vero iusto laudantium ducimus numquam dolorum dolore quasi quo doloribus nisi illo reiciendis ipsam accusantium nesciunt, aut, deleniti unde."
-    },
-    {
-      title: "Элемент 2",
-      content:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt dolores vero iusto laudantium ducimus numquam dolorum dolore quasi quo doloribus nisi illo reiciendis ipsam accusantium nesciunt, aut, deleniti unde."
-    },
-    {
-      title: "Элемент 3",
-      content:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt dolores vero iusto laudantium ducimus numquam dolorum dolore quasi quo doloribus nisi illo reiciendis ipsam accusantium nesciunt, aut, deleniti unde."
-    }
-  ]
-});
 
-function createAccordeon(element, config) {
-  let lastActive;
 
-  element.classList.add("accordeon");
-  element.addEventListener("click", function(e) {
-    if (e.target.classList.contains("title")) {
-      if (lastActive) {
-        lastActive.classList.remove("active");
-      }
-
-      lastActive = e.target.parentNode;
-      lastActive.classList.add("active");
-    }
+var menuItems = document.querySelectorAll('.menu-acco__item'),
+    active = document.getElementsByClassName('active');
+Array.from(menuItems).forEach(function (item, i, menuItems) {
+  item.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (active.length > 0 && active[0] !== this) // если есть активный элемент, и это не тот по которому кликнули
+      active[0].classList.remove('active'); // убрать класс active
+    
+      // изменить состояние класса active на текущем элементе: добавить если не было, убрать если было.
+    this.classList.toggle('active');
   });
-
-  if (!config) {
-    return;
-  }
-
-  for (let i = 0; i < config.items.length; i++) {
-    const item = config.items[i];
-    const itemElement = document.createElement(".menu-acco__item");
-    const titleElement = document.createElement(".menu-acco__item");
-    const contentElement = document.createElement(".menu-acco__item");
-
-    titleElement.classList.add("title");
-    titleElement.textContent = item.title;
-    contentElement.classList.add("content");
-    contentElement.innerHTML = item.content;
-
-    itemElement.appendChild(titleElement);
-    itemElement.appendChild(contentElement);
-
-    element.appendChild(itemElement);
-  }
-}
+});
