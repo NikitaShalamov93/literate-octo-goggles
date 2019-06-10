@@ -75,8 +75,15 @@
 		height: rem(5px);
 		border-radius: 50%;
 		background: white;
-		margin: 0 rem(12px);
-        margin: 10px 0;
+		margin: 0 rem(20px);
+        
+        @include laptop{
+            margin: 0 rem(5px);
+        }
+        
+         @include tablets{
+            margin: 0 rem(10px);
+        }
 	}
 }
 

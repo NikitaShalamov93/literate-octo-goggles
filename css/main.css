@@ -1267,8 +1267,13 @@ footer {
     height: 0.3125rem;
     border-radius: 50%;
     background: white;
-    margin: 0 0.75rem;
-    margin: 10px 0; }
+    margin: 0 1.25rem; }
+    @media screen and (max-width: 992px) {
+      .nav__item:after {
+        margin: 0 0.3125rem; } }
+    @media screen and (max-width: 768px) {
+      .nav__item:after {
+        margin: 0 0.625rem; } }
 
 .nav__link {
   display: inline-block;
@@ -1857,7 +1862,8 @@ footer {
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
   color: #fff;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  max-width: 13.75rem; }
 
 .team {
   background: url("../img/bg/comand.jpg") 50% no-repeat;
