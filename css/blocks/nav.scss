@@ -84,6 +84,10 @@
          @include tablets{
             margin: 0 rem(10px);
         }
+        
+         @include phones{
+            margin: rem(15px);
+        }
 	}
 }
 

@@ -1274,6 +1274,9 @@ footer {
     @media screen and (max-width: 768px) {
       .nav__item:after {
         margin: 0 0.625rem; } }
+    @media screen and (max-width: 535px) {
+      .nav__item:after {
+        margin: 0.9375rem; } }
 
 .nav__link {
   display: inline-block;
