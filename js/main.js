@@ -196,44 +196,7 @@ window.scrollBy(0, section.getBoundingClientRect().top / 15 - 1);
 
 });
 
-// reviews открыть всплывающий текст
 
-const openButton = document.querySelector("#openOverlay");
-const successOverlay = openOverlay("Привет, <b>loftschool</b>!");
-
-openButton.addEventListener("click", function() {
-  document.body.appendChild(successOverlay);
-});
-
-function openOverlay(content) {
-  const overlayElement = document.createElement("div");
-  overlayElement.classList.add("overlay");
-
-  const containerElement = document.createElement("div");
-  containerElement.classList.add("container");
-
-  const contentElement = document.createElement("div");
-  contentElement.classList.add("content");
-  contentElement.innerHTML = content;
-
-  const closeElement = document.createElement("a");
-  closeElement.classList.add("close");
-  closeElement.textContent = "x";
-  closeElement.href = "#";
-  closeElement.addEventListener("click", function() {
-    document.body.removeChild(overlayElement);
-  });
-
-  overlayElement.appendChild(containerElement);
-  containerElement.appendChild(closeElement);
-  containerElement.appendChild(contentElement);
-
-  return overlayElement;
-}
-
-function changeCurrentEq(index) {
-  currentEq = index;
-} // TouchScreen
 
 
 // var hammer = new Hammer(document.documentElement);
@@ -335,3 +298,59 @@ Array.from(menuItems).forEach(function (item, i, menuItems) {
     this.classList.toggle('active');
   });
 });
+
+
+
+//////////////////////
+
+function createModal() {
+    const container = document.createElement('div');
+
+    container.className = 'popup';
+    container.innerHTML = template;
+
+    const contentTitle = container.querySelector('.overlay__title'),
+        contentBlock = container.querySelector('.overlay__text'),
+        closeBtns = container.querySelectorAll('.js-close'),
+        bigBtn = container.querySelector('.button'),
+        smallBtn = container.querySelector('.overlay__close');
+
+    for (var btn of closeBtns) {
+        btn.addEventListener('click', e => {
+            document.body.removeChild(container);
+        })
+    }
+
+    container.addEventListener('click', e => {
+        if (e.target === container) {
+            btn.click();
+        }
+    })
+
+    return {
+        clear() {
+            contentTitle.innerHTML = '';
+            contentBlock.innerHTML = '';
+            smallBtn.style.display = "block";
+            bigBtn.style.display = "block";
+        },
+        open() {
+            document.body.appendChild(container);
+        },
+        close() {
+            closeBtn.click();
+        },
+        setTitle(title) {
+            contentTitle.innerHTML = title;
+        },
+        setContent(message) {
+            contentBlock.innerHTML = message;
+        },
+        setBigBtn() {
+            smallBtn.style.display = "none";
+        },
+        setSmallBtn() {
+            bigBtn.style.display = "none";
+        }
+    };
+}
