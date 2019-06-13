@@ -6,11 +6,15 @@
   bottom: 0;
   background: rgba(62, 64, 65, 0.8);
   display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 10000; }
 
-.overlay__content {
+.popup-review-content {
   padding: 1rem;
   max-width: 250px;
   background: #fff;
@@ -20,17 +24,22 @@
   font-family: 'ubuntu', Helvetica, sans-serif;
   font-size: 14px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
-.overlay__title {
+.content__title {
   font-family: 'gagalin';
   font-size: 0.8125rem; }
 
-.overlay__text {
+.content__text {
   margin: 10px auto;
   text-align: justify;
   font-size: 0.8125rem; }
-
-/*# sourceMappingURL=popup-review.css.map */
