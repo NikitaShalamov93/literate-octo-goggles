@@ -5,20 +5,12 @@
   right: 0;
   bottom: 0;
   background: rgba(47, 50, 52, 0.99);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   z-index: 100;
   display: none;
-  -webkit-transition: opacity .3s;
-  -o-transition: opacity .3s;
   transition: opacity .3s; }
   .hamburger-menu_visible {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     opacity: 0; }
 
@@ -34,7 +26,6 @@
   width: rem(18px);
   height: rem(18px);
   padding: rem(15px);
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
   .hamburger-menu__close:hover .hamburger-menu__close-icon use {
     fill: #fff; }
@@ -44,6 +35,6 @@
   height: 100%; }
   .hamburger-menu__close-icon use {
     fill: #c1c2c2;
-    -webkit-transition: fill .3s;
-    -o-transition: fill .3s;
     transition: fill .3s; }
+
+/*# sourceMappingURL=hamburger-menu.css.map */
