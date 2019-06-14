@@ -157,6 +157,8 @@ window.addEventListener('DOMContentLoaded', () => {
             reviewBtns[i].addEventListener('click', (e) => {
                 e.preventDefault();
                 popupReview.style.display = 'flex';
+                
+               
             });
         }
     };
@@ -164,33 +166,41 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.onkeydown = (e) => {
         if (e.keyCode === 27) {
-            popupReview.style.display = 'none';	        
+            popupReview.style.display = 'none';
         }
     };
 
     document.body.addEventListener('click', function (e) {
         let target = e.target;
-    
+   
         if (target.closest('.popup-review-content') && !target.closest(close)) {
             e.stopPropagation();
         } else if (target.closest('.popup-review')) popupReview.style.display = 'none';	
+        
+         
     });
     
     
     
     ////////////////////////gggaga
     const overlay = document.querySelector('.popup-review');
-const closeBtn = document.querySelector('.popup-review__close');
+    const closeBtn = document.querySelector('.popup-review__close');
 
 closeBtn.addEventListener("click", function() {
     overlay.style.display = 'none';
+  
 });
 
 document.body.addEventListener("click", function(e) {
   if (e.target === overlay) {
     overlay.style.display = 'none';
+    
   }
 });
+    
+/////////////hidden
+    
+const body = document.body;
 
     // close.addEventListener('click', (e) => {
     //     e.preventDefault();
@@ -268,8 +278,6 @@ document.body.addEventListener("click", function(e) {
 //     return valid;
 // };
 });
-
-
 
 
 

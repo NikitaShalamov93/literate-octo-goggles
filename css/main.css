@@ -583,7 +583,8 @@ footer {
   font-size: 1.5rem;
   font-family: 'Lifehack-Medium';
   color: #2f3234;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.25rem;
+  margin-top: 15px; }
 
 .btn {
   display: inline-block;
@@ -2272,7 +2273,7 @@ button {
   font-size: 0.8125rem; }
 
 .content__text {
-  margin: 10px auto;
+  margin: 15px auto;
   text-align: justify;
   font-size: 0.8125rem; }
 
@@ -2283,19 +2284,18 @@ button {
 .popup-review__close {
   position: absolute;
   margin-left: 85px;
-  margin-top: -10px;
+  margin-top: -5px;
   width: 22px;
-  height: 22px;
-  opacity: 0.3; }
+  height: 22px; }
   .popup-review__close:hover {
     opacity: 1; }
   .popup-review__close:before {
     position: absolute;
     left: 15px;
     content: ' ';
-    height: 23px;
-    width: 2px;
-    background-color: red;
+    height: 18px;
+    width: 3px;
+    background-color: #ec8468;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
@@ -2303,9 +2303,12 @@ button {
     position: absolute;
     left: 15px;
     content: ' ';
-    height: 23px;
-    width: 2px;
-    background-color: red;
+    height: 18px;
+    width: 3px;
+    background-color: #ec8468;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg); }
+
+.fixed-body {
+  overflow: hidden; }
