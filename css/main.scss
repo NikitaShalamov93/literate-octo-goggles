@@ -15,12 +15,12 @@ $desktop: 1200px;
 @import "_misc/normalize.scss";
 
 // media
-@import "_misc/media";
+@import "_misc/media.scss";
 
 // setups
-@import "_misc/mixins";
-@import "_misc/fonts";
-@import "_misc/layout";
+@import "_misc/mixins.scss";
+@import "_misc/fonts.scss";
+@import "_misc/layout.scss";
 
 // blocks
 @import "blocks/best.scss";
@@ -50,4 +50,4 @@ $desktop: 1200px;
 @import "blocks/text-block.scss";
 @import "blocks/_slider-acco.scss";
 
-@import "blocks/popup-review";
+@import "blocks/_popup-review.scss";

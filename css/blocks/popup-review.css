@@ -37,9 +37,18 @@
 
 .content__title {
   font-family: 'gagalin';
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  color: red; }
 
 .content__text {
   margin: 10px auto;
   text-align: justify;
   font-size: 0.8125rem; }
+
+.overlay__close {
+  width: 20px;
+  height: 20px; }
+
+.popup-review__close {
+  width: 20px;
+  height: 20px; }

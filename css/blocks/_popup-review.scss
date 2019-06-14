@@ -29,10 +29,53 @@
 .content__title {
     font-family: 'gagalin';
     font-size: 0.8125rem;
+   
 }
 
 .content__text {
     margin: 10px auto;
     text-align: justify;
     font-size: 0.8125rem;
+}
+
+.overlay__close {
+    width: 20px;
+    height: 20px;
+}
+
+.popup-review__close--block {
+}
+
+.popup-review__close {
+    position: absolute;
+    margin-left: 85px;
+    margin-top: -10px;
+    
+    width: 22px;
+    height: 22px;
+    opacity: 0.3;
+    
+    &:hover {
+        opacity: 1;
+    }
+    
+    &:before {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 23px;
+        width: 2px;
+        background-color: red;
+        transform: rotate(45deg);
+    }
+    
+    &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 23px;
+        width: 2px;
+        background-color: red;
+        transform: rotate(-45deg);
+    }
 }
