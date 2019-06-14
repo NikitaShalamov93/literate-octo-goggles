@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function showMobileMenu() {
         burger.classList.add("active");
         menu.classList.add("active");
-        document.body.classList.add("hidden");
+        body.classList.add("hidden");
     };
 
     function hideMobileMenu() {
@@ -168,13 +168,29 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    window.addEventListener('click', function (e) {
+    document.body.addEventListener('click', function (e) {
         let target = e.target;
     
         if (target.closest('.popup-review-content') && !target.closest(close)) {
             e.stopPropagation();
         } else if (target.closest('.popup-review')) popupReview.style.display = 'none';	
     });
+    
+    
+    
+    ////////////////////////gggaga
+    const overlay = document.querySelector('.popup-review');
+const closeBtn = document.querySelector('.popup-review__close');
+
+closeBtn.addEventListener("click", function() {
+    overlay.style.display = 'none';
+});
+
+document.body.addEventListener("click", function(e) {
+  if (e.target === overlay) {
+    overlay.style.display = 'none';
+  }
+});
 
     // close.addEventListener('click', (e) => {
     //     e.preventDefault();
