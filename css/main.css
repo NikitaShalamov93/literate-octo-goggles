@@ -1168,7 +1168,7 @@ footer {
   display: none; }
   @media screen and (max-width: 450px) {
     .menu-acco__content {
-      width: 185px; } }
+      width: 200px; } }
 
 .menu-acco__text {
   font-family: 'Ubuntu', Helvetica, sans-serif;
