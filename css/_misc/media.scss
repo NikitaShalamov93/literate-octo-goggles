@@ -23,6 +23,12 @@
 	}
 }
 
+@mixin phonesmini {
+    @media screen and (max-width: $phonesmini) {
+        @content;
+    }
+}
+
 @function rem($px) {
   @return $px / 16px + 0rem;
 }

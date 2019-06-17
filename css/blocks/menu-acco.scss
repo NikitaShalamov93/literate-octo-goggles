@@ -61,6 +61,10 @@
 	width: 300px;
 	overflow: hidden;
     display: none;
+    
+    @include phonesmini {
+        width: 175px;
+    }
 
 }
 

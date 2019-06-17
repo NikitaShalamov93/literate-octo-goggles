@@ -5,11 +5,12 @@ $black: #2f3234;
 $red: #e35028;
 
 // resolutions
-
+$phonesmini: 450px;
 $phones: 535px;
 $tablets: 768px;
 $laptop: 992px;
 $desktop: 1200px;
+
 
 //normalize
 @import "_misc/normalize.scss";
